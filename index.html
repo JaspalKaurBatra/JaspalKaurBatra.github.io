@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="Webpage Assignment">
+      <meta name="keywords" content="HTML,CSS,Bootstrap">
+      <meta name="author" content="Jaspal Kaur Batra">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="css/style-minified.css">
+      <link rel="icon" href="icons/bicycle.png" type="image/png/gif">
+      <title>
+        Travel Blog
+      </title>
+      <script>
+          //Scroll Indicator
+          // When the user scrolls the page, execute myFunction 
+          window.onscroll = function() {myFunction()};
+
+          function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+          }
+      </script>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <!-- Favicon -->
+      <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js" integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <h2 class="navbar-brand logo"><img src="icons/wanderlust3.jpg" alt="WanderLust Logo" style="height: 15%; width: 15%;"></h2>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto justify-content-end">
+              <li class="nav-item active">
+                <a class="nav-link" href="#top">Recommended <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#blog">Travel-Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="#place">Places</a></li>
+              <li class="nav-item"><a class="nav-link" href="#food">Food</a></li>
+              <li class="nav-item"><a class="nav-link" href="#top">Activities</a></li>
+              <li class="nav-item dropdown">
+                <div class="btn-group dropleft">
+                  <button type="button" class="btn btn-secondary dropdown-toggle bttn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Suggestions</button> 
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#top">Home</a>
+                    <a class="dropdown-item" href="#foot">Reach out to me!</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Exit</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar" style="background-color: #ff9999;"></div>
+        </div>  
+      </header>
+
+
+
+      <section id="top">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="images/bangalore5.jpg" alt="Bangalore Palace">
+            <div class="carousel-caption d-none d-md-block">      <!-- Use Carousel caption instead of image <caption>..needs to b inside <div>! -->
+              <h3>The Bangalore Palace</h3>
+              <p>...</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/conrad.jpg" alt="Conrad">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Hotel Conrad</h3>
+              <p>...</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/gm.jpg" alt="GM Infinite E city town">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>GM Infinite E City Town,</h3><h4> Electronic City</h4>
+              <p>...</p>
+            </div>
+          </div>
+            <div class="carousel-item">
+            <img class="d-block w-100" src="images/manyata.jpg" alt="Manyata Tech Park">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Manyata Tech Park</h3>
+              <p>...</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/hebbal.jpg" alt="Hebbal Lake">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Hebbal Lake</h3>
+              <p>...</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/ibm.jpg" alt="IBM">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>IBM Global Services India Limited</h3>
+              <p>...</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/salarpuriasattva.jpg" alt="Salarpuria Sattva">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Salarpuria Sattva Gold Summit Apartments</h3>
+              <p>...</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      </section>    
+
+      <main>  <!-- Hero Section -->
+        <div class="row row_alt"  id="blog">   <!-- 33% column for Image, 66% column for content -->
+            <div class="col-sm-3">
+                <figure>
+                  <div class="container">     <!--Image Overlay -->
+                    <img src="images\blog.jpg" alt="Blogger" class="image" >
+                    <div class="middle">
+                      <div class="text">Jaspal</div>
+                    </div>
+                  </div>
+                </figure>
+            </div>
+            <div class="col-sm-7">
+              <h2>Home Away From Home</h2><br>
+              <h3 class="large-font">First Time in Bangalore?</h3>
+              <p><span>A journey of one year</span> Being first time away from home, I was in search of a place which resembled my home, my hometown, everything that kept me away from the feeling of being "Homesick". So, in Bangalore itself, I started looking for another Punjab. We punjabis are known to be a foodie, so yeah, everything started from there onwards.. Search for food! Good and apetizing gourmet! Nevertheless, What is Bangalore known for? I can't neglect that.. Lakes, Monuments, Pubs, TechParks, so much to be explored yet. Here on this webpage I have shared a few must try-ons on your visit to this lively metro-city. </p>        
+            </div>
+          
+        </div>
+      </main>
+
+      <section class="parallax" style="background-image: url('images/park.jpg');" id="place"></section>
+      <section>
+              <!-- Places -->
+       <div class="row">  <!-- 66% column for content, 33% column for Image-->
+          
+            <div class="col-sm-7">
+             <h2>Luscious Greens</h2><br>
+             <h3 class="large-font">Looking for Peace?</h3>
+             <p><span>The Cubbon Park is the place!</span> This place has a forest-alike look right in the heart of Bangalore which is what attracted me when I was heading to the city from the airport, that's when I made my mind to explore it. After digging a bit about the same, I realised this park has a library too.. Well after realising that, I couldn't stop myself from visiting this peaceful place and yes I did! It was a great experience to explore the place where there was existence of diverse habitat.</p>
+            </div>
+            <div class="col-sm-3">
+              <figure>
+                <div class="card card-style">
+                  <img class="card-img-top" src="images/cubbonpark2.jpg" alt="Cubbon Park">
+                  <div class="card-body">
+                    <h5 class="card-title">The Cubbon Park</h5>
+                    <p class="card-text"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Take Me there!</button></p>
+
+                    <!-- Modal -->
+                    <div id="myModal" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h3 class="modal-title">Google Maps</h3>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.929715126177!2d77.59073971471716!3d12.976347190852787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1673e7d0672f%3A0xc62ca5a6e943dfb8!2sSri+Chamarajendra+Park!5e0!3m2!1sen!2sin!4v1544683092250" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </figure>
+            </div>
+          
+        </div>
+      </section>
+
+      <section class="parallax" style="background-image: url('images/amusement.gif');"></section>
+
+      <section>            <!-- Places -->
+        <div class="row row_alt">
+          
+            <div class="col-sm-3">
+             <figure>
+              <div class="card card-style">
+                  <img class="card-img-top" src="images\wonderla.png" alt="WonderLa">
+                  <div class="card-body">
+                    <h5 class="card-title">Wonderla</h5>
+                    <p class="card-text"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Take Me there!</button></p>
+
+                    <!-- Modal -->
+                    <div id="myModal" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h3 class="modal-title">Google Maps</h3>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.1349357017225!2d77.39878321471566!3d12.834555890945863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae47c7ffab735b%3A0x5e52a4e8d0a84438!2sWonderla+Bangalore!5e0!3m2!1sen!2sin!4v1544683940827" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </figure>
+            </div>
+            <div class="col-sm-7">
+              <h2>Adventure</h2><br>
+              <h3 class="large-font">Crazy for Rides?</h3>
+              <p><span>Amusement Park? Being there ever?</span> Everybody has a child inside which should be given all the pleasures and there shouldn't be any age where you should stop yourself from doing adventure unless some health issues are there!? So when ready for a quality day out, take your loved ones to this amusement park, named, WonderLa. At this place, there is something or the other for all age groups, so one must be giving it a shot.</p> 
+            </div>
+          
+        </div>
+      </section>
+
+      <section class="parallax" style="background-image: url('images/dessert7.jpg');" id="food"></section>
+
+      <section>            <!-- Food -->
+        <div class="row">
+          
+            <div class="col-sm-7">
+              <h2>Death By Chocolate</h2><br>
+              <h3 class="large-font">Craving for Chocolate?</h3>
+              <p><span>The Corner House's famous Death By Chocolate</span> Got a sweet tooth or otherwise, you should not miss this thing when you come to the city of lakes. Corner house is yet another ice cream parlour in Bangalore but what makes it unique, is it's history and presence. It has 36 years of history but in Bangalore only, here itself there are some 17 branches but not outside:( . Whatsoever the case is but it's DBC (Death by chocolate) is simply love. "Heaven Encountered" feeling for chocolate lovers and my regular thing too. It's customizable so everytime you have it you can try a different version of it and trust me it will be worth it!</p>      
+            </div>
+            <div class="col-sm-3">
+              <figure>
+                <div class="card card-style">
+                  <img class="card-img-top" src="images\dbc.jpg" alt="DBC">
+                  <div class="card-body">
+                    <h5 class="card-title">The Corner House</h5>
+                    <p class="card-text"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Take Me there!</button></p>
+
+                    <!-- Modal -->
+                    <div id="myModal" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h3 class="modal-title">Google Maps</h3>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d62211.02263015007!2d77.58244024154006!3d12.959760283018326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scorner+house!5e0!3m2!1sen!2sin!4v1544684041459" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </figure>
+            </div>
+          
+        </div>
+      </section>
+
+      <section class="parallax" style="background-image: url('images/food.gif');"></section>
+
+      <section>      <!-- Food -->
+        <div class="row row_alt">
+          
+            <div class="col-sm-3">
+              <figure>
+                <div class="card card-style">
+                  <img class="card-img-top" src="images\meghana.jpg" alt="MeghanaFoods">
+                  <div class="card-body">
+                    <h5 class="card-title">Meghana Foods</h5>
+                    <p class="card-text"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Take Me there!</button></p>
+
+                    <!-- Modal -->
+                    <div id="myModal" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h3 class="modal-title">Google Maps</h3>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d62211.024967930694!2d77.5824401660798!3d12.959750927051436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smeghana+foods!5e0!3m2!1sen!2sin!4v1544684132402" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </figure>
+            </div>
+            <div class="col-sm-7">
+              <h2>Foodie</h2><br>
+              <h3 class="large-font">Spicy, Chicken Biryani?</h3>
+              <p><span>Meghana's boneless chicken biryani</span> It's a quite buzz among all the biryani fans about meghana's biryani. Meghana Food is a branch of an Andhra restaurant chain serving simple curries, biryanis and tandoor dishes. If you are cravng for a too spicy meal just go for Andhra dishes which are easily accessible in Bangalore and specifically this place for it's well known chicken biryani. You will love it, irrespective of your love for spicy food.</p>        
+            </div>
+          
+        </div>
+      </section>
+
+
+      <section>
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title">Google Maps</h3>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.929715126177!2d77.59073971471716!3d12.976347190852787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1673e7d0672f%3A0xc62ca5a6e943dfb8!2sSri+Chamarajendra+Park!5e0!3m2!1sen!2sin!4v1544683092250" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="parallax" style="background-image: url('images/food.jpg');"></section>
+      <div id="foot"> 
+      <footer>
+        <nav class="row">
+          <article class="col-sm-4 base">
+            <h4 class="col">CONTACT</h4><br><br>
+            <a href="#">jaspalkaurbatra95@gmail.com</a><br>
+            <a href="#">+91 768 194 1118</a><br>
+          </article>
+          <article class="col-sm-4 base_alt">
+            <h4 class="col">NAVIGATION</h4><br><br>
+            <a href="#top">Recommended</a><br>
+            <a href="#blog">Bangalore Travel Blog</a><br>
+            <a href="#place">Places</a><br>
+            <a href="#food">Food</a><br>
+            <a href="#top">Activies</a><br>
+          </article>
+          <article class="col-sm-4 base">
+            <h4 class="col">LET'S KEEP IN TOUCH</h4><br><br>
+            <a href="#"><img src="images/instagram.png" alt="instagram"></a><br>
+            <a href="#"><img src="images/twitter.png" alt="twitter"></a><br>
+            <a href="#"><img src="images/quora.png" alt="qoura"></a><br>
+            <a href="#"><img src="images/linkedin.png" alt="linkedin"></a><br>
+          </article>
+        </nav>
+      </footer>
+    </div>
+
+  </body>
+</html>

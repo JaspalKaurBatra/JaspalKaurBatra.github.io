@@ -1,0 +1,1 @@
+This repository has a website source code in Bootstrap for the same site (travel blog) which was previously implemented in HTML and CSS(See previous repository). Additional to previous blog, some new functionalities of bootstrap is implemented.
